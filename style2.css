@@ -1,0 +1,458 @@
+```css
+/* =========================================================
+   ADVANCED INSTALLATION PAGE
+   Modern Developer / VS Code Inspired UI
+   ========================================================= */
+
+/* ---------- Global Reset ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    min-height: 100vh;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #e6edf3;
+
+    /* Modern dark developer background */
+    background:
+        radial-gradient(circle at 15% 20%, rgba(0, 122, 204, 0.18), transparent 30%),
+        radial-gradient(circle at 85% 80%, rgba(0, 190, 255, 0.12), transparent 30%),
+        linear-gradient(135deg, #0d1117, #111827 50%, #0b1220);
+
+    padding: 60px 20px;
+}
+
+
+/* ---------- Main Content ---------- */
+
+body > * {
+    max-width: 850px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* ---------- Headings ---------- */
+
+h1 {
+    position: relative;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+    letter-spacing: -1px;
+
+    margin-bottom: 18px;
+
+    color: #ffffff;
+
+    background: linear-gradient(
+        90deg,
+        #00aaff,
+        #007acc,
+        #6dd5fa
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+
+    animation: fadeDown 0.8s ease;
+}
+
+h1::after {
+    content: "";
+    display: block;
+
+    width: 70px;
+    height: 4px;
+
+    margin-top: 12px;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        90deg,
+        #007acc,
+        #00c6ff
+    );
+}
+
+
+h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+
+    margin-top: 28px;
+    margin-bottom: 10px;
+
+    font-weight: 650;
+
+    animation: fadeUp 0.7s ease;
+}
+
+
+p {
+    font-size: 1rem;
+    color: #aeb8c5;
+
+    margin-bottom: 18px;
+
+    animation: fadeUp 0.8s ease;
+}
+
+
+/* ---------- Horizontal Rule ---------- */
+
+hr {
+    border: none;
+
+    height: 1px;
+
+    margin: 28px 0;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(0, 122, 204, 0.7),
+        transparent
+    );
+}
+
+
+/* ---------- Installation / Checkbox Card ---------- */
+
+div {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    gap: 14px;
+
+    padding: 16px 20px;
+
+    margin-bottom: 20px;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 14px;
+
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+
+    box-shadow:
+        0 10px 30px rgba(0, 0, 0, 0.25),
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+/* Card hover effect */
+
+div:hover {
+    transform: translateY(-3px);
+
+    border-color: rgba(0, 170, 255, 0.45);
+
+    box-shadow:
+        0 15px 40px rgba(0, 122, 204, 0.15),
+        inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+
+/* ---------- Checkbox ---------- */
+
+div input[type="checkbox"] {
+    appearance: none;
+
+    width: 21px;
+    height: 21px;
+
+    flex-shrink: 0;
+
+    border: 2px solid #607080;
+
+    border-radius: 6px;
+
+    background: #111827;
+
+    cursor: pointer;
+
+    position: relative;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+
+div input[type="checkbox"]:hover {
+    border-color: #00aaff;
+    transform: scale(1.08);
+}
+
+
+div input[type="checkbox"]:checked {
+    background: #007acc;
+    border-color: #00aaff;
+}
+
+
+div input[type="checkbox"]:checked::after {
+    content: "✓";
+
+    position: absolute;
+
+    left: 3px;
+    top: -3px;
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+/* ---------- Checkbox Label ---------- */
+
+div label {
+    font-size: 0.98rem;
+
+    color: #d7dee7;
+
+    cursor: pointer;
+
+    transition: color 0.2s ease;
+}
+
+div:hover label {
+    color: #ffffff;
+}
+
+
+/* ---------- Links ---------- */
+
+a {
+    position: relative;
+
+    display: inline-block;
+
+    color: #35b7ff;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+a:hover {
+    color: #7ddcff;
+
+    transform: translateY(-1px);
+}
+
+
+/* ---------- Download / Installation Buttons ---------- */
+
+a[target="_blank"] {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-width: 190px;
+
+    padding: 13px 22px;
+
+    margin-top: 8px;
+
+    background: linear-gradient(
+        135deg,
+        #007acc,
+        #0099dd
+    );
+
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 0.98rem;
+
+    font-weight: 650;
+
+    box-shadow:
+        0 8px 20px rgba(0, 122, 204, 0.25);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease,
+        background 0.25s ease;
+}
+
+
+/* Button hover */
+
+a[target="_blank"]:hover {
+    background: linear-gradient(
+        135deg,
+        #008ee8,
+        #00b7ff
+    );
+
+    color: white;
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 28px rgba(0, 170, 255, 0.35);
+
+    text-decoration: none;
+}
+
+
+/* Button click */
+
+a[target="_blank"]:active {
+    transform: translateY(0);
+
+    box-shadow:
+        0 5px 12px rgba(0, 122, 204, 0.25);
+}
+
+
+/* ---------- Keyboard Focus ---------- */
+
+a:focus-visible,
+input:focus-visible {
+    outline: 3px solid rgba(0, 170, 255, 0.45);
+    outline-offset: 4px;
+}
+
+
+/* ---------- Selection ---------- */
+
+::selection {
+    background: #007acc;
+    color: white;
+}
+
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0b1118;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #24516c;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #007acc;
+}
+
+
+/* ---------- Animations ---------- */
+
+@keyframes fadeDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* ---------- Mobile Responsive ---------- */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 35px 16px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h3 {
+        font-size: 1.05rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+    div {
+        padding: 14px 15px;
+    }
+
+    a[target="_blank"] {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* ---------- Reduced Motion Accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+```

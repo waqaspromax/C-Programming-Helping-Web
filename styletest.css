@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 32px;
+  margin-bottom: 25px;
+  color: #fff;
+  letter-spacing: -0.5px;
+}
+
+/* Form container */
+body {
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+}
+
+div {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 14px;
+}
+
+label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #94a3b8;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  background: #1e293b;
+  color: #fff;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.2);
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* Radio buttons */
+p {
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  accent-color: #38bdf8;
+  margin-right: 6px;
+}
+
+label[for="Basic"],
+label[for="Premium"],
+label[for="Advanced"],
+label[for="Terms"] {
+  display: inline;
+  text-transform: none;
+  font-size: 14px;
+  color: #cbd5e1;
+  font-weight: 400;
+  margin-right: 15px;
+}
+
+button {
+  width: 100%;
+  max-width: 400px;
+  padding: 13px;
+  background: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #7dd3fc;
+  transform: translateY(-1px);
+}
+
+a {
+  text-decoration: none;
+}

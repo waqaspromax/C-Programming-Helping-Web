@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page - C Programming language</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <hr>
+        <h1>Login Here:</h1>
+        <hr>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter name:">
+        </div>
+        <div>
+            <label for="Ph">Phone:</label>
+            <input type="tel" id="Ph" placeholder="Enter number:">
+        </div>
+        <div>
+            <label for="Email">Email:</label>
+            <input type="email" id="Email" placeholder="Enter email:">
+        </div>
+        <div>
+            <label for="Password">Password:</label>
+            <input type="password" id="Password" placeholder="Enter password:">
+        </div>
+    </header>
+    <main>
+        <div>
+            <label for="Gender"></label>
+            <select id="Gender" required>
+                <option value="" disabled selected> select Gender</option>
+                <option value="male">male</option>
+                <option value="female">female</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>Subscription Plan</p>
+
+            <input name="Subscription" type="radio" id="Basic">
+            <label for="Basic">Free</label>
+
+            <input name="Subscription" type="radio" id="Premium">
+            <label for="Premium">Premium</label>
+
+            <input id="Advanced" type="radio" name="Subscription">
+            <label for="Advanced">Advanced</label>
+        </div>
+        <div>
+            <input type="checkbox" name="Terms" id="Terms" required>
+            <label for="Terms">I am agreed with terms and condions.</label>
+        </div>
+        <div>
+            <label for="Comments">Comments</label>
+            <textarea name="Comments" id="Comments" placeholder="Enter your comments"></textarea>
+        </div>
+        <div>
+            <a href="http://127.0.0.1:3000/second-page.html" target="_main"> <button type="submit">submit</button></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
